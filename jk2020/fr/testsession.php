@@ -20,24 +20,19 @@
 
 <h2>Étape 3 : Participer à une réunion de test</h2>
 
-<!--
+
 <h4>Dates des réunions de test</h4>
 <p>Lors de l’inscription, vous vous êtes inscrit à l’une de ces 3 dates. À l’heure indiquée, veuillez alors cliquer sur le bouton <b>Participer</b>.</p>
 
 <table>
 	<tr>
-		<td>Réunion de test 1</td>
-		<td>samedi 3 octobre, 12 h 00</td>
-		<td><div class="button-grayed pull-right">Participer</div></td>
-	</tr>
-	<tr>
-		<td>Réunion de test 2</td>
-		<td>mardi 6 octobre, 20 h 00</td>
-		<td><a href="https://us02web.zoom.us/j/86936412870"><div class="button pull-right">Participer</div></a></td>
+		<td>Réunion de test 3</td>
+		<td>Vendredi 23 octobre, 20 h 30</td>
+		<td><div class="button pull-right">Participer</div></a></td>
 	</tr>
 	
 </table>
--->
+
 <h4>Participer</h4>
 <p>Pour participer, cliquez sur le bouton correspondant.</p>
 

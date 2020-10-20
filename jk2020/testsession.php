@@ -27,12 +27,12 @@
 	<tr>
 		<td>Testsitzung 4 </td>
 		<td>Do, 22. Oktober 14-15 Uhr</td>
-		<td><div class="button-grayed pull-right">Teilnehmen</div></td>
+		<td><a href="https://us02web.zoom.us/j/82673207506"><div class="button pull-right">Teilnehmen</div></a></td>
 	</tr>
 	<tr>
 		<td>Testsitzung 5 </td>
 		<td>Fr. 23. Oktober 19-20 Uhr</td>
-		<td><div class="button-grayed pull-right">Teilnehmen</div></td>
+		<td><a href="https://us02web.zoom.us/j/87230262945"><div class="button pull-right">Teilnehmen</div></td>
 	</tr>
 	
 </table>
