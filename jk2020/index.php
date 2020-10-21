@@ -59,19 +59,19 @@
 			</a>
 		</div>
 	</div>
-<!--
+
 		<h4>Weitere Informationen</h4>
 		<p>Hier finden Sie weitere Informationen zur Jährlichen Konferenz.</p> 
 	<div class="kacheln">	
 		<div class="align">
-			
-			<a href="https://213.193.118.142:8081" target="_blank">
+			<a href="https://nx5186.your-storageshare.de/f/201077" target="_blank">
 				<div class="element">
-					<p class="T2">Tagesprogramm Tagung Teil Schweiz</p>
-					<i class="front-icon far fa-clock"></i><br/>
-					<p>Sehen Sie sich den aktuellen Tagesablauf an. Kurzfristige Änderungen werden hier berücksichtigt.</p>
+					<p class="T2">Dokumente JK 2020</p>
+					<i class="front-icon fas fa-file"></i><br/>
+					<p>Hier finden Sie die wichtisten Dokumennte in der aktuellsten Fassung.</p>
 				</div>
 			</a>
+			<!--
 			<a href="https://213.193.118.142:8081" target="_blank">
 				<div class="element">
 					<p class="T2">Tagesprogramm Jährliche Konferenz</p>
@@ -79,9 +79,9 @@
 					<p>Sehen Sie sich den aktuellen Tagesablauf an. Kurzfristige Änderungen werden hier berücksichtigt.</p>
 				</div>
 			</a>
+			-->
 		</div>
 	</div>
-	-->
 </div>
 
 

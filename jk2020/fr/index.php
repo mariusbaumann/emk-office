@@ -58,28 +58,29 @@
 			</a>
 		</div>
 	</div>
-<!--
-		<h4>Weitere Informationen</h4>
-		<p>Hier finden Sie weitere Informationen zur jählichen Konferenz.</p> 
+
+		<h4>Informations complémentaires</h4>
+		<p>Vous trouverez ici de plus amples informations sur la conférence annuelle.</p> 
 	<div class="kacheln">	
 		<div class="align">
 			
-			<a href="https://213.193.118.142:8081" target="_blank">
+			<a href="https://nx5186.your-storageshare.de/f/178531" target="_blank">
 				<div class="element">
-					<p class="T2">Tagesprogramm Tagung teil Schweiz</p>
-					<i class="front-icon far fa-clock"></i><br/>
-					<p>Sehen Sie den aktuellen Tagesablauf an. Kurzfristige Änderungen werden hier berücksichtig.</p>
+					<p class="T2">Documents CA 2020</p>
+					<i class="front-icon fas fa-file"></i><br/>
+					<p>Vous trouverez ici les documents les plus importants dans la dernière version.</p>
 				</div>
 			</a>
+			<!--
 			<a href="https://213.193.118.142:8081" target="_blank">
 				<div class="element">
 					<p class="T2">Tagesprogramm Jährliche Konferenz</p>
 					<i class="front-icon far fa-clock"></i><br/>
 					<p>Sehen Sie den aktuellen Tagesablauf an. Kurzfristige Änderungen werden hier berücksichtig.</p>
 				</div>
-			</a>
+			</a>-->
 		</div>
-	</div>-->
+	</div>
 </div>
 
 
