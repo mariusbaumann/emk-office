@@ -28,7 +28,7 @@
 	<tr>
 		<td>Réunion de test 3</td>
 		<td>Vendredi 23 octobre, 20 h 30</td>
-		<td><div class="button pull-right">Participer</div></a></td>
+		<td><a href="https://us02web.zoom.us/j/85752483225"><div class="button pull-right">Participer</div></a></td>
 	</tr>
 	
 </table>
