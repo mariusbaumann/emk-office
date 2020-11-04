@@ -31,7 +31,7 @@
 
 	<div class="row">
 		
-		<div class="col-4">
+		<div class="col-6">
 			<a href="anleitung.php">
 				<div class="kachel">
 					<h5>2. Software einrichten</h5>
@@ -40,16 +40,8 @@
 				</div>
 			</a>
 		</div>
-		<div class="col-4">
-		<a href="testsession.php">
-				<div class="kachel">
-					<h5>3. Software bedienen und an einer Testsitzung teilnehmen</h5>
-					<i class="front-icon fas fa-laptop"></i><br/>
-					<p>Hier erfahren Sie mehr über die Bedienung der Software und wie Sie an einer Testsitzung teilnehmen können. <br/><br/></p>
-				</div>
-			</a>
-		</div>
-		<div class="col-4">
+	
+		<div class="col-6">
 			<a href="session.php">
 				<div class="kachel">
 					<h5>4. An der Jährlichen Konferenz teilnehmen</h5>

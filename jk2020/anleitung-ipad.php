@@ -2,6 +2,7 @@
 <head>
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../resources/theme.css">
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <title>EMK-Office</title>
@@ -12,41 +13,41 @@
 </head>
 
 <body>
-<div id="container">
+<div class="container">
 
 
 <div class="icon-line"></div>
 <a href="../"><div class="icon-logo-container"><img class="icon-logo" src="../../2716-991-max.png"></div></a>
 
-<h2>1. Télécharger le logiciel Zoom</h2>
+<h2>1. Download Zoom-Software</h2>
 
-<p>Ouvrez <b>l’App Store</b></p>
+<p>Öffnen Sie den <b>App-Store</b></p>
 <img class="explainimg" src="ipad-1.png">
 
-<p>Appuyez sur <b>Rechercher</b></p>
+<p>Tippen Sie auf  <b>Suchen</b></p>
 <img class="explainimg" src="ipad-2.png">
 
-<p>Entrez <b>Zoom</b> dans le champ de recherche et appuyez sur l’appli <b>Zoom</b></p>
+<p>Geben Sie im Suchfeld <b>Zoom</b> ein und tippen Sie auf den Vorschlag <b>Zoom</b></p>
 <img class="explainimg" src="ipad-3.png">
 
-<p>Appuyez sur <b>Télécharger</b></p>
+<p>Tippen Sie auf  <b>laden</b></p>
 <img class="explainimg" src="ipad-4.png">
 
-<p>Si l’on vous demande de confirmer votre identifiant Apple, appuyez deux fois <b>la touche de verrouillage</b> (sur le bord extérieur de l'iPad).</p>
+<p>Falls Sie gefragt werden, die Apple-ID zu bestätigen, drücken sie die  <b>Lock-Taste </b> (aussen am Rand des iPads) <b>doppelt</b></p>
 <img class="explainimg" src="ipad-7.png">
 
-<p>Si l'on vous demande de saisir le mot de passe de l'identifiant Apple, veuillez le saisir et le confirmer.</p>
+<p>Falls Sie gefragt werden, das Apple-ID-Passwort einzugeben, geben Sie dieses bitte ein und bestätigen die Anfrage.</p>
 
-<p><b>Zoom</b> est en train d’être téléchargé. Attendez que le cercle se remplisse complètement et que le bouton <b>Ouvrir s’affiche</b></p>
+<p>Nun wird <b>Zoom</b> heruntergeladen. Warten Sie, bis sich der Kreis ganz gefüllt hat und zu <b>Öffnen </b>wird.</p>
 <img class="explainimg" src="ipad-5.png">
 
-<p>Appuyez sur <b>Ouvrir</b></p>
+<p>Tippen Sie auf  <b>Öffnen</b></p>
 <img class="explainimg" src="ipad-6.png">
 
-<p>Si votre iPad affiche cette fenêtre, l'installation est terminée.</p>
+<p>Wenn Ihr iPad nun folgendes anzeigt, sind Sie mit der Installation fertig.</p>
 <img class="explainimg" src="ipad-8.png">
 
-<p>Vous êtes maintenant prêt à participer à une réunion de test. Continuez à<a class="inline-link" href="testsession.php"><i class="fas fa-arrow-right"></i>  l’étape 3.</a></p>
+<p>Nun sind Sie bereit für die Teilnahme an einer Testsitzung. Lesen Sie unter <a class="btn btn-primary" href="testsession.php"><i class="fas fa-arrow-right"></i> Punkt 3</a> weiter.</p>
 
 
 
