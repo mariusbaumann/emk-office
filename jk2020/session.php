@@ -2,6 +2,7 @@
 <head>
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../resources/theme.css">
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <title>EMK-Office</title>
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-<div id="container">
+<div class="container">
 
 
 <div class="icon-line"></div>
@@ -25,28 +26,30 @@
 
 <table>
 	<tr>
-		<td>Tagung teil Schweiz</td>
-		<td>Samstag 7. November, Zeitpunkt noch unklar</td>
-		<td><a><div class="button-grayed pull-right">Teilnehmen</div></a></td>
+		<td>Tagung Teil Schweiz (TTCH)</td>
+		<td>Samstag 7. November, 12:00</td>
+		<td><a><div class="btn btn-secondary disabled"  role="button" aria-disabled="true">Teilnehmen</div></a></td>
 	</tr>
 	<tr>
-		<td>Jährliche Konferenz Tag 1</td>
+		<td>Jährliche Konferenz (JK) Tag 1</td>
 		<td>Freitag, 13. November, 11:00</td>
-		<td><div class="button-grayed pull-right">Teilnehmen</div></td>
+		<td><div class="btn btn-secondary disabled"  role="button" aria-disabled="true">Teilnehmen</div></td>
 	</tr>
 	<tr>
-		<td>Jährliche Konferenz Tag 2</td>
+		<td>Jährliche Konferenz (JK) Tag 2</td>
 		<td>Samstag, 14. November, 8:30</td>
-		<td><div class="button-grayed pull-right">Teilnehmen</div></td>
+		<td><div class="btn btn-secondary disabled"  role="button" aria-disabled="true">Teilnehmen</div></td>
 	</tr>
 </table>
 
-<h4>Wie nemhe ich Teil?</h4>
 
-<a href="."><div class="button">Zur Einführungsübersicht</div></a>
+<br/>
+<hr>
 
 
 <h4>Kurzanleitung</h4>
+
+
 
 <p>Um teilzunehmen, klicken Sie auf den entsprechenden Knopf (oben).</p>
 
