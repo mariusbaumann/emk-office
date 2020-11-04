@@ -2,6 +2,7 @@
 <head>
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../resources/theme.css">
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <title>EMK-Office</title>
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-<div id="container">
+<div class="container">
 
 
 <div class="icon-line"></div>
@@ -20,7 +21,7 @@
 
 <h2>1. Download Zoom-Software</h2>
 
-<p>Laden Sie die Zoom-Software herunter in dem Sie auf folgenden Link klicken: <a class="inline-link" href="https://zoom.us/client/latest/ZoomInstaller.exe">Zoom herunterladen</a></p>
+<p>Laden Sie die Zoom-Software herunter in dem Sie auf folgenden Link klicken: <a class="btn btn-primary" href="https://zoom.us/client/latest/ZoomInstaller.exe"><i class="fas fa-download"></i> Zoom herunterladen</a></p>
 
 <p>Das Installationsprogramm landet nun in Ihrem Downloads-Ordner.</p>
 
@@ -58,7 +59,7 @@
 <p>Danach erscheint dieses Fenester: </p>
 <img  class="explainimg" src="Zoom-Installed.png">
 
-<p>Nun sind Sie bereit für die Teilnahme an einer Testsession. Lesen sie unter Punkt 3 weiter. </p>
+<p>Nun sind Sie bereit für die Teilnahme an einer Testsession. Lesen sie unter <a class="btn btn-primary" href="testsession.php"><i class="fas fa-arrow-right"></i> Punkt 3</a> weiter. </p>
 
 
 

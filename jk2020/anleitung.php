@@ -2,6 +2,7 @@
 <head>
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../resources/theme.css">
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <title>EMK-Office</title>
@@ -12,7 +13,10 @@
 </head>
 
 <body>
-<div id="container">
+<div class="container">
+
+
+
 
 
 <div class="icon-line"></div>
@@ -22,40 +26,47 @@
 
 <p>Bitte wählen Sie aus auf welcher Art Gerät sie das Programm einrichten möchten:</p>
 
-<div class="kacheln">
-	<div class="align">
-		<a href="anleitung-desktop.php" >
-			<div class="element">
-				<p class="T2">Windows Desktop</p>
-				<i class="front-icon fas fa-tv"></i><br/>
-				<p>Falls Sie über einen Desktop-Computer (Kiste mit angeschossenem Bildschirm) teilnehmen möchten klicken Sie bitte hier. </p>
-			</div>
-		</a>
-		<a href="anleitung-laptop.php">
-			<div class="element">
-				<p class="T2">Windows Laptop</p>
-				<i class="front-icon fas fa-laptop"></i><br/>
-				<p>Falls Sie über einen Laptop (auch: Notebook genannt, aufklappbar mit integriertem Bildschirm) teilnehmen möchten klicken Sie bitte hier.</p>
-			</div>
-		</a>
+	<div class="row">
+
+		<div class="col-6">
+			<a href="anleitung-desktop.php" >
+				<div class="kachel">
+					<h5>Windows Desktop</h5>
+					<i class="front-icon fas fa-tv"></i>
+					<p>Falls Sie über einen Desktop-Computer (Kiste mit angeschossenem Bildschirm) teilnehmen möchten klicken Sie bitte hier.</p>
+				</div>
+			</a>
+		</div>
+		<div class="col-6">
+			<a href="anleitung-laptop.php">
+				<div class="kachel">
+					<h5>Windows Laptop</h5>
+					<i class="front-icon fas fa-laptop"></i>
+					<p>Falls Sie über einen Laptop (auch: Notebook genannt, aufklappbar mit integriertem Bildschirm) teilnehmen möchten klicken Sie bitte hier.</p>
+				</div>
+			</a>
+		</div>
 	</div>
-	<div class="align">
-		<a href="anleitung-mac.php" >
-			<div class="element">
-				<p class="T2">Mac</p>
-				<i class="front-icon fab fa-apple"></i><br/>
-				<p>Falls Sie über einen Mac teilnehmen möchten klicken Sie bitte hier. </p>
-			</div>
-		</a>
-		<a href="anleitung-ipad.php">
-			<div class="element">
-				<p class="T2">iPad</p>
-				<i class="front-icon fas fa-tablet-alt"></i><br/>
-				<p>Falls Sie über ein iPad teilnehmen möchten klicken Sie bitte hier.</p>
-			</div>
-		</a>
+	<div class="row">
+		<div class="col-6">
+			<a href="anleitung-mac.php" >
+				<div class="kachel">
+					<h5>Mac</h5>
+					<i class="front-icon fab fa-apple"></i>
+					<p>Falls Sie über einen Mac teilnehmen möchten klicken Sie bitte hier. </p>
+				</div>	
+			</a>
+		</div>
+		<div class="col-6">
+			<a href="anleitung-ipad.php">
+				<div class="kachel">
+					<h5>iPad</h5>
+					<i class="front-icon fas fa-tablet-alt"></i>
+					<p>Falls Sie über einen Mac teilnehmen möchten klicken Sie bitte hier. </p>
+				</div>	
+			</a>
+		</div>
 	</div>
-</div>
 
 <p><b>Bitte beachten Sie:</b> Es ist zwar teoretisch möglich per Smartphone an der Konferenz teil zu nehmen. Wir raten Ihnen aber dringend davon ab, da wir Ihnen Informationen einblenden werden, die auf dem Smartphone-Display nicht lesbar sein werden.</p>
 
