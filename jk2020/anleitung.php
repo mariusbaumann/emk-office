@@ -62,7 +62,7 @@
 				<div class="kachel">
 					<h5>iPad</h5>
 					<i class="front-icon fas fa-tablet-alt"></i>
-					<p>Falls Sie über einen Mac teilnehmen möchten klicken Sie bitte hier. </p>
+					<p>Falls Sie mit dem iPad teilnehmen möchten klicken Sie bitte hier. </p>
 				</div>	
 			</a>
 		</div>

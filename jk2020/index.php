@@ -20,6 +20,7 @@
 
 	<a href="#"><div class="icon-logo-container"><img class="icon-logo" src="../2716-991-max.png"></div></a>
 	<a href="fr"><div class="btn btn-primary">Pour le français, cliquez ici</div></a>
+	<a href="support.php"><div class="btn btn-danger float-right"><i class="fas fa-phone"></i> Hilfe-Telefon</div></a>
 	<hr>
 	<h2>Jährliche Konferenz 2020 Startseite</h2>
 	<p>Sowohl die Tagung Teil Schweiz als auch die Jährliche Konferenz werden dieses Jahr grösstenteils online durchgeführt. Diese Seite soll Ihnen helfen, sich auf diese Konferenzen vorzubereiten. Bitte gehen Sie die Einführung durch und lesen Sie die Einzelnen Schritte.</p> 
@@ -28,6 +29,7 @@
 
 	<p>Mit den folgenden 4 Schritten werden Sie in den nächsten Wochen in die Online-Teilnahme eingeführt. Sie sollen Ihnen dabei helfen, sich vorzubereiten. Bei Schritt 1 werden sie gebeten, sich anzumelden, bei Schritt 2 wird Ihnen gezeigt, wie Sie ihr Gerät für die Tagungen einrichten. Bei Schritt 3 testen Sie, ob ihre Einrichtung auch funktioniert und  Schritt 4 ist die eigentliche Konferenzteilnahme an den Konferenztagen. Klicken Sie jeweils auf die einzelnen Schritte, um mehr zu erfahren.
 </p> 
+<p> Da Sie Schritt 1 und 3 schon gemacht haben, sind diese nicht mehr aufgeführt. </p>
 
 	<div class="row">
 		
@@ -51,6 +53,24 @@
 			</a>
 		</div>
 	</div>
+	<hr>
+	<h4>Programm</h4>
+
+	<div class="row">
+		<div class="col-12">
+		<a href="programm.php" >
+			<div class="kachel">
+				
+					<p class="T2">Konferenzprogramm Tagung Teil Schweiz</p>
+					<i class="front-icon far fa-clock"></i><br/>
+					<p>Hier finden Sie das Programm für die Tagung Teil Schweiz</p>
+				
+			</div>	
+		</div>
+		</a>
+	</div>
+
+
 <hr>
 	<h4>Weitere Informationen</h4>
 	<p>Hier finden Sie weitere Informationen zur Jährlichen Konferenz.</p> 
@@ -73,6 +93,15 @@
 					<h5>1. Anmeldung</h5>
 					<i class="front-icon fas fa-file-signature"></i>
 					<p>Hier melden Sie sich für die Teilnahme an.</p>
+				</div>
+			</a>	
+		</div>
+		<div class="col-3">
+			<a href="https://anmeldung.methodisten.ch/registerform.php" target="_blank">
+				<div class="kachel">
+					<h5>Zugang interner Bereich</h5>
+					<i class="front-icon fas fa-lock-open"></i>
+					<p>Zugang zu den Dokumenten beantragen.</p>
 				</div>
 			</a>	
 		</div>

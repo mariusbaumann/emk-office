@@ -22,7 +22,7 @@ body {
 
 .kachel-pgm {
 	width: 100%;
-	height: 100%;
+	/*height: 100%;*/
 	/*margin: 0px 0px px 15px;*/
 	padding: 15px;
 	background-color: #fff;
@@ -227,18 +227,10 @@ textarea {
 	border-color: #aed361;
 }
 
-.button-grayed {
-	background-color: #777;
-	color: #36363d;
-	border-radius: 3px;
-	height: 25px;
-	width: auto;
-	margin: 5px 5px 5px 0px;
-	padding: 5px 8px 2px 8px;
-	vertical-align: middle;	
-	text-align: center;
-	display: inline-block;
+.btn {
+	margin-bottom: 3px;
 }
+
 
 th, td {
 	border-bottom: 1px solid #ddd;

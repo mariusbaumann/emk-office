@@ -5,31 +5,40 @@
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/theme.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EMK-Office</title>
-
+<meta http-equiv="refresh" content="60" />
 <meta name="description" content="Website der EMK Zentralverwaltung" />
 </head>
 
 <body>
 
+<!-- 
+	
+<span class="badge badge-dark">Läuft</span> 
+<span class="badge badge-danger">Verspätung</span>
 
+ -->
 
 <div class="container">
 	<div class="icon-line"></div>
-
-	<a href="#"><div class="icon-logo-container"><img class="icon-logo" src="../2716-991-max.png"></div></a>
-	<a href="fr"><div class="btn btn-primary">Pour le français, cliquez ici</div></a>
+	<br/>
+	
+	<h2>Tagung Teil Schweiz - Programm</h2>
 	<hr>
-	<h2>Tagung Teil Schweiz</h2>
 	<br/>
 	 
+	<div class="row">
+		<div class="col-12">
+			<p><b>Legende:</b> <span class="badge badge-pill badge-secondary">Gruppenarbeit</span> Sie arbeiten in kleinen Gruppen. Das Zoom verschiebt Sie automatisch. <span class="badge badge-pill badge-info">Zoom-Wahl</span> Sie nehmen über Zoom an einer Abstimmung teil. <i class="fas fa-mug-hot"></i> Pause <span class="badge badge-pill badge-info"><i class="fas fa-hand-paper"></i></span> Enthält Zeit für Wortmeldungen. <span class="badge badge-pill badge-info">Electionbuddy-Wahl</span> Sie nehmen an einer Abstimmung über eine Webseite teil. Prüfen Sie ihr E-Mail Postfach. <span class="badge badge-primary">ff</span> Fortfolgend, folgt auf den vorangegangenen Programmpunkt.</p>
+		</div>
+	</div>
 	<div class="row outer-row">
 		<div class="col-12">
 			<div class="kachel-pgm">
 				<h5><span class="badge badge-secondary">12:00</span> Zoom Offen zum Einwählen</h5>
 				<hr>
-				<a href="fr" class="btn btn-primary">In Zoom-Sitzung einwählen</a>
+				<a href="https://us02web.zoom.us/j/85851948030" class="btn btn-primary" target="_blank">In Zoom-Sitzung einwählen</a>
 				<p></p>
 			</div>
 		</div>
@@ -37,7 +46,7 @@
 	<div class="row outer-row">
 		<div class="col-12">
 			<div class="kachel-pgm">
-				<h5><span class="badge badge-primary">13:00</span> Begrüssung</h5>
+				<h5><span class="badge badge-primary"> 13:00</span> Begrüssung</h5>
 			</div>
 		</div>
 	</div>
@@ -58,7 +67,7 @@
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right">Zoom-Wahl</span>
 							<h6><span class="badge badge-primary">ff</span> Wahl Helfer</h6>
 							<hr>
-							<a href="fr" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Wahlliste als PDF herunterladen</a>
+							<a href="https://nx5186.your-storageshare.de/s/eDGrHeZnaPizHgD" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Wahlliste als PDF herunterladen</a>
 						</div>
 					</div>
 				</div>
@@ -72,7 +81,7 @@
 				<hr>
 				<div class="row outer-row">
 					<div class="col-12">
-						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"></span>
+						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"><i class="fas fa-hand-paper"></i></span>
 							<h6><span class="badge badge-primary">13:35</span> VO-Bericht Kap 1 Jahreszyklus</h6>
 						</div>
 					</div>
@@ -96,7 +105,7 @@
 						<div class="kachel-pgm"><span class="badge badge-pill badge-secondary float-right">Gruppenarbeit</span>
 							<h6><span class="badge badge-primary">14:00</span> Disskussion der fünf Thesen</h6>
 							<hr>
-							<a href="fr" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Thesen als PDF herunterladen</a>
+							<a href="https://nx5186.your-storageshare.de/s/9sbFRJx2b56an2z" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Thesen als PDF herunterladen</a>
 						</div>
 					</div>
 				</div>
@@ -122,7 +131,7 @@
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"><i class="fas fa-hand-paper"></i></span>
 							<h6><span class="badge badge-primary">14:45</span> Austausch über das Feedback der Gruppen</h6>
 							<hr>
-							<a href="fr" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Rückumeldungen der Gruppen als PDF herunterladen</a>
+							<a href="fr" class="btn btn-secondary disabled" aria-disabled="true" target="_blank"><i class="fas fa-file-pdf"></i> Rückumeldungen der Gruppen als PDF herunterladen</a>
 						</div>
 					</div>
 				</div>
@@ -131,7 +140,7 @@
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"><i class="fas fa-hand-paper"></i></span>
 							<h6><span class="badge badge-primary">15:10</span> Konferieren zum Antrag 1</h6>
 							<hr>
-							<a href="fr" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Antrag 1 als PDF herunterladen</a>
+							<a href="https://nx5186.your-storageshare.de/s/JMYTqbCLHXxEdbS" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Antrag 1 als PDF herunterladen</a>
 						</div>
 					</div>
 				</div>
@@ -163,8 +172,7 @@
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"></span>
 							<h6><span class="badge badge-primary">14:45</span> Einführung in Antrag 2 und Abänderungsantrag</h6>
 							<hr>
-							<a href="fr" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Antrag 2 als PDF herunterladen</a>
-							<a href="fr" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Abänderungsantrag als PDF herunterladen</a>
+							<a href="https://nx5186.your-storageshare.de/s/J7mQPC8YkNp3Wgq" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Antrag 2 und Abänderungsantrag als PDF herunterladen</a>
 						</div>
 					</div>
 				</div>
@@ -272,6 +280,8 @@
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right">Zoom-Wahl</span>
 							<h6><span class="badge badge-primary">16:52</span> Annahme Bericht</h6>
+							<hr>
+							<a href="https://nx5186.your-storageshare.de/s/mtDss3cRXJ58iQJ" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Bericht des Vorstands als PDF herunterladen</a>
 						</div>
 					</div>
 				</div>
@@ -279,6 +289,8 @@
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"></span>
 							<h6><span class="badge badge-primary">16:55</span> Bericht Kommision 11</h6>
+							<hr>
+							<a href="https://nx5186.your-storageshare.de/s/Xoys3qNLwMNWjKn" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Bericht der Kommission 11 als PDF herunterladen</a>
 						</div>
 					</div>
 				</div>
@@ -301,7 +313,10 @@
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right">Electionbuddy-Wahl</span>
 							<h6><span class="badge badge-primary">17:03</span> Kummulierte Wahlen/Abstimmungen </h6>
 							<hr>
-							<p>Wahl Revisoren, Jahresrechnung, Wahlanträge Kommission 11</p>
+							<a href="https://nx5186.your-storageshare.de/s/Xoys3qNLwMNWjKn" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Annahme Jahresrechnung, Wahl Revisionsstelle, Wahlen Ko11 als PDF herunterladen</a>
+							<br/>
+							<br/>
+							<p>Wahl Revisionsstelle, Jahresrechnung, Wahlanträge Kommission 11</p>
 							<p>Bitte prüfen Sie ihr E-Mail-Postfach für die Wahlunterlagen</p>
 						</div>
 					</div>
@@ -371,12 +386,10 @@
 	</div>
 	
 <hr>
-	
+
 </div>
 </div>
 
-
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
 </body>
 </html>
