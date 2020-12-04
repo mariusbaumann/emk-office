@@ -2,6 +2,7 @@
 <head>
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../resources/theme.css">
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <title>EMK-Office</title>
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-<div id="container">
+<div class="container">
 
 
 <div class="icon-line"></div>
@@ -26,19 +27,9 @@
 
 <table>
 	<tr>
-		<td>Session de la partie Suisse</td>
-		<td>samedi 7 novembre, horaire reste à définir</td>
-		<td><a><div class="button-grayed pull-right">participer</div></a></td>
-	</tr>
-	<tr>
-		<td>Conférence annuelle Jour 1</td>
-		<td>vendredi 13 novembre, 11 h 00</td>
-		<td><div class="button-grayed pull-right">participer</div></td>
-	</tr>
-	<tr>
 		<td>Conférence annuelle Jour 2</td>
 		<td>samedi 14 novembre, 8 h 30</td>
-		<td><div class="button-grayed pull-right">Teilnehmen</div></td>
+		<td><a href="https://us02web.zoom.us/j/83250770078?pwd=elpGL2ZuOGpqY1FDbWd0SXdxU01Tdz09" target="_blank"><div class="btn btn-primary"  role="button" >participer</div></a></td>
 	</tr>
 </table>
 

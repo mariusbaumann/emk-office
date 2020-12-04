@@ -2,6 +2,7 @@
 <head>
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../../resources/theme.css">
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <title>EMK-Office</title>
@@ -12,7 +13,7 @@
 </head>
 
 <body>
-<div id="container">
+<div class="container">
 
 
 <div class="icon-line"></div>
@@ -22,7 +23,7 @@
 
 <h2>1. Télécharger le logiciel Zoom</h2>
 
-<p>Téléchargez le logiciel Zoom en cliquant sur le lien suivant:  <a class="inline-link" href="https://zoom.us/client/latest/Zoom.pkg"><i class="fas fa-download"></i> télécharger Zoom</a></p>
+<p>Téléchargez le logiciel Zoom en cliquant sur le lien suivant:  <a class="btn btn-primary" href="https://zoom.us/client/latest/Zoom.pkg"><i class="fas fa-download"></i> télécharger Zoom</a></p>
 
 <p>Lorsque l'on vous demande si vous souhaitez autoriser le téléchargement, cliquez sur <b>Autoriser.</b></p>
 <img class="explainimg" src="Mac-1.png">
@@ -51,10 +52,10 @@
 <p>Cliquez sur <b>Ajouter à la corbeille</b></p>
 <img class="explainimg" src="Mac-6.png">
 
-<p>Si cette fenêtre s’affiche alors l'installation est terminée: 
+<p>Si cette fenêtre s’affiche alors l'installation est terminée: </p>
 <img class="explainimg" src="Mac-8.png">
 
-<p>Vous êtes maintenant prêt à participer à une réunion de test. Continuez à <a class="inline-link" href="testsession.php"><i class="fas fa-arrow-right"></i> l’étape 3</a>.</p>
+<p>Vous êtes maintenant prêt à participer à une réunion de test. Continuez à <a class="btn btn-primary" href="testsession.php"><i class="fas fa-arrow-right"></i> l’étape 3</a>.</p>
 
 
 </div>

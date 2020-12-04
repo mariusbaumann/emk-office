@@ -36,7 +36,7 @@
 	<div class="row outer-row">
 		<div class="col-12">
 			<div class="kachel-pgm">
-				<h5><span class="badge badge-secondary">12:00</span> Zoom Offen zum Einwählen</h5>
+				<h5> <span class="badge badge-secondary">12:00</span> Zoom Offen zum Einwählen</h5>
 				<hr>
 				<a href="https://us02web.zoom.us/j/85851948030" class="btn btn-primary" target="_blank">In Zoom-Sitzung einwählen</a>
 				<p></p>
@@ -68,6 +68,14 @@
 							<h6><span class="badge badge-primary">ff</span> Wahl Helfer</h6>
 							<hr>
 							<a href="https://nx5186.your-storageshare.de/s/eDGrHeZnaPizHgD" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Wahlliste als PDF herunterladen</a>
+							<br/>
+							<br/>
+							<p> Wahlresultat</p>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 97%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">106 Ja</div>
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 3%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">3 Nein</div>
+								<!--<div class="progress-bar bg-secondary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20 Enthalungen</div>-->
+							</div>
 						</div>
 					</div>
 				</div>
@@ -115,7 +123,7 @@
 	<div class="row outer-row">
 		<div class="col-12">
 			<div class="kachel-pgm">
-				<h5><span class="badge badge-warning">14:30</span> Pause <i class="fas fa-mug-hot float-right"></i> </h5>
+				<h5><span class="badge badge-warning"> 14:30</span> Pause <i class="fas fa-mug-hot float-right"></i> </h5>
 				<p>Bitte die Zoom-Sitzung geöffnet lassen und nicht verlassen!</p>
 				<p>Rückmeldugnen aus den Disskusionsgruppen werden währen der Pause eingeblendet</p>
 			</div>
@@ -147,7 +155,15 @@
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right">Zoom-Wahl</span>
-							<h6><span class="badge badge-primary">15:25</span> Abstimmung Antrag 1</h6>
+							<h6> <span class="badge badge-primary">15:25</span> Abstimmung Antrag 1</h6>
+							<br/>
+							<p> Wahlresultat</p>
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 52%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">57 Nein</div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 48%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">52 Ja</div>
+								
+								<!--<div class="progress-bar bg-secondary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20 Enthalungen</div>-->
+							</div>
 						</div>
 					</div>
 				</div>
@@ -157,7 +173,7 @@
 	<div class="row outer-row">
 		<div class="col-12">
 			<div class="kachel-pgm">
-				<h5><span class="badge badge-warning">15:30</span> Pause <i class="fas fa-mug-hot float-right"></i> </h5>
+				<h5> <span class="badge badge-warning">15:30</span> Pause <i class="fas fa-mug-hot float-right"></i> </h5>
 				<p>Bitte die Zoom-Sitzung geöffnet lassen und nicht verlassen!</p>
 			</div>
 		</div>
@@ -165,63 +181,69 @@
 	<div class="row outer-row">
 		<div class="col-12">
 			<div class="kachel-pgm">
-				<h5><span class="badge badge-primary">14:45</span> VO-Bericht Teil 3</h5>
+				<h5> <span class="badge badge-primary">15:40</span> VO-Bericht Teil 3</h5>
 				<hr>
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"></span>
-							<h6><span class="badge badge-primary">14:45</span> Einführung in Antrag 2 und Abänderungsantrag</h6>
+							<h6><span class="badge badge-primary">15:40</span> Einführung in Antrag 2 und Abänderungsantrag</h6>
 							<hr>
-							<a href="https://nx5186.your-storageshare.de/s/J7mQPC8YkNp3Wgq" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Antrag 2 und Abänderungsantrag als PDF herunterladen</a>
+							<a href="https://nx5186.your-storageshare.de/s/PSNDCJdJKPL2bwz" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Antrag 2 und Abänderungsantrag als PDF herunterladen</a>
 						</div>
 					</div>
 				</div>
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"></span>
-							<h6><span class="badge badge-primary">ff</span> Vorstellung Antrag 2</h6>
+							<h6> <span class="badge badge-primary">ff</span> Vorstellung Antrag 2</h6>
 						</div>
 					</div>
 				</div>
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"></span>
-							<h6><span class="badge badge-primary">ff</span> Vorstellung Abänderungsantrag</h6>
+							<h6> <span class="badge badge-primary">ff</span> Vorstellung Abänderungsantrag</h6>
 						</div>
 					</div>
 				</div>
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"><i class="fas fa-hand-paper"></i></span>
-							<h6><span class="badge badge-primary">ff</span> Debatte Abänderungsantrag</h6>
+							<h6> <span class="badge badge-primary">ff</span> Debatte Abänderungsantrag</h6>
 						</div>
 					</div>
 				</div>
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"></span>
-							<h6><span class="badge badge-primary">ff</span> Votum Andrea Brunner und Roland Affolter</h6>
+							<h6> <span class="badge badge-primary">ff</span> Votum Andrea Brunner und Roland Affolter</h6>
 						</div>
 					</div>
 				</div>
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right">Zoom-Wahl</span>
-							<h6><span class="badge badge-primary">ff</span> Abstimmung Abänderungsantrag</h6>
+							<h6> <span class="badge badge-primary">ff</span> Abstimmung Abänderungsantrag</h6>
+							<br/>
+							<p> Wahlresultat</p>
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">61 Nein</div>
+								<div class="progress-bar bg-success" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">49 Ja</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"><i class="fas fa-hand-paper"></i></span>
-							<h6><span class="badge badge-primary">ff</span> Debatte Antrag 2</h6>
+							<h6> <span class="badge badge-primary">ff</span> Debatte Antrag 2</h6>
 						</div>
 					</div>
 				</div>
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"></span>
-							<h6><span class="badge badge-primary">ff</span> Votum Roland Affolter</h6>
+							<h6> <span class="badge badge-primary">ff</span> Votum Roland Affolter</h6>
 						</div>
 					</div>
 				</div>
@@ -229,6 +251,12 @@
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right">Zoom-Wahl</span>
 							<h6><span class="badge badge-primary">ff</span> Abstimmung Antrag 2</h6>
+							<br/>
+							<p> Wahlresultat</p>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 81%" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">88 Ja</div>
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 19%" aria-valuenow="19" aria-valuemin="0" aria-valuemax="100">20 Nein</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -238,7 +266,7 @@
 	<div class="row outer-row">
 		<div class="col-12">
 			<div class="kachel-pgm">
-				<h5><span class="badge badge-warning">16:20</span> Pause <i class="fas fa-mug-hot float-right"></i> </h5>
+				<h5> <span class="badge badge-warning">16:20</span> Pause <i class="fas fa-mug-hot float-right"></i> </h5>
 				<p>Bitte die Zoom-Sitzung geöffnet lassen und nicht verlassen!</p>
 			</div>
 		</div>
@@ -251,7 +279,7 @@
 				<div class="row outer-row">
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right"></span>
-							<h6><span class="badge badge-primary">16:30</span> VO-Bericht Kap 2-5</h6>
+							<h6> <span class="badge badge-primary">16:30</span> VO-Bericht Kap 2-5</h6>
 						</div>
 					</div>
 				</div>
@@ -282,6 +310,11 @@
 							<h6><span class="badge badge-primary">16:52</span> Annahme Bericht</h6>
 							<hr>
 							<a href="https://nx5186.your-storageshare.de/s/mtDss3cRXJ58iQJ" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Bericht des Vorstands als PDF herunterladen</a>
+							<br/>
+							<p> Wahlresultat</p>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">105 Ja</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -305,6 +338,14 @@
 					<div class="col-12">
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right">Zoom-Wahl</span>
 							<h6><span class="badge badge-primary">17:00</span> Annahme Bericht Kommision 11</h6>
+							<!--<br/>
+							<br/>
+							<p> Wahlresultat</p>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50 Ja</div>
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30 Nein</div>
+								<div class="progress-bar bg-secondary" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20 Enthalungen</div>
+							</div>-->
 						</div>
 					</div>
 				</div>
@@ -313,11 +354,28 @@
 						<div class="kachel-pgm"><span class="badge badge-pill badge-info float-right">Electionbuddy-Wahl</span>
 							<h6><span class="badge badge-primary">17:03</span> Kummulierte Wahlen/Abstimmungen </h6>
 							<hr>
-							<a href="https://nx5186.your-storageshare.de/s/Xoys3qNLwMNWjKn" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Annahme Jahresrechnung, Wahl Revisionsstelle, Wahlen Ko11 als PDF herunterladen</a>
+							<a href="https://nx5186.your-storageshare.de/s/PjKzM8riP7RToB8" class="btn btn-primary" target="_blank"><i class="fas fa-file-pdf"></i> Annahme Jahresrechnung, Wahl Revisionsstelle, Wahlen Ko11 als PDF herunterladen</a>
 							<br/>
 							<br/>
 							<p>Wahl Revisionsstelle, Jahresrechnung, Wahlanträge Kommission 11</p>
 							<p>Bitte prüfen Sie ihr E-Mail-Postfach für die Wahlunterlagen</p>
+							<br/>
+							<p> Jahresrechnung</p>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">106 Ja</div>
+							</div>
+							<br/>
+							<p> Wahl Revisionsstelle</p>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">106 Ja</div>
+							</div>
+							<br/>
+							<p> Wahlen Kommision 11</p>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 96%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">104 Ja</div>
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 2%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">1 Nein</div>
+								<div class="progress-bar bg-secondary" role="progressbar" style="width: 2%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">1 Enthalungen</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -329,7 +387,7 @@
 			<div class="kachel-pgm">
 				<h5><span class="badge badge-warning">17:10</span> Pause <i class="fas fa-mug-hot float-right"></i> </h5>
 				<p>Bitte die Zoom-Sitzung geöffnet lassen und nicht verlassen!</p>
-				<p>Wahl-System (Electionbuddy) schliesst um 17:15</p>
+				<p>Wahl-System (Electionbuddy) schliesst um <span class="badge badge-warning">Neu 17:30</span></p>
 			</div>
 		</div>
 	</div>
@@ -372,7 +430,7 @@
 	<div class="row outer-row">
 		<div class="col-12">
 			<div class="kachel-pgm">
-				<h5><span class="badge badge-primary">18:00</span> Gottesdienst</h5>
+				<h5><span class="badge badge-dark">Läuft</span> <span class="badge badge-primary">18:00</span> Gottesdienst</h5>
 			</div>
 		</div>
 	</div>

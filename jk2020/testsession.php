@@ -2,7 +2,6 @@
 <head>
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="../resources/theme.css">
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <title>EMK-Office</title>
@@ -13,7 +12,7 @@
 </head>
 
 <body>
-<div class="container">
+<div id="container">
 
 
 <div class="icon-line"></div>
@@ -24,7 +23,6 @@
 <h4>Testtermine</h4>
 <p>Sie haben sich bei der Anmeldung für einen dieser 3 Termine angemeldet. Bitte klicken Sie zum angegebenen Zeitpunkt auf den Knopf <b>Teilnehmen</b>.</p>
 
-<!--
 <table>
 	<tr>
 		<td>Testsitzung 4 </td>
@@ -38,7 +36,7 @@
 	</tr>
 	
 </table>
--->
+
 <h4>Teilnehmen</h4>
 <p>Um teilzunehmen, klicken Sie auf den entsprechenden Knopf.</p>
 

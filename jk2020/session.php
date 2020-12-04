@@ -6,7 +6,6 @@
 <link rel="stylesheet" type="text/css" href="../resources/theme.css">
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <title>EMK-Office</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta charset="utf-8"/>
 
@@ -27,19 +26,9 @@
 
 <table class="table">
 	<tr>
-		<th scope="row">Tagung Teil Schweiz (TTCH)</th>
-		<td>Samstag 7. November, 12:00</td>
-		<td><a href="https://us02web.zoom.us/j/85851948030" target="_blank"><div class="btn btn-primary"  role="button" >Teilnehmen</div></a></td>
-	</tr>
-	<tr>
-		<th scope="row">Jährliche Konferenz (JK) Tag 1</th>
-		<td>Freitag, 13. November, 11:00</td>
-		<td><div class="btn btn-secondary disabled"  role="button" aria-disabled="true">Teilnehmen</div></td>
-	</tr>
-	<tr>
 		<th scope="row">Jährliche Konferenz (JK) Tag 2</th>
 		<td>Samstag, 14. November, 8:30</td>
-		<td><div class="btn btn-secondary disabled"  role="button" aria-disabled="true">Teilnehmen</div></td>
+		<td><a href="https://us02web.zoom.us/j/87871385062?pwd=YTdCcnExNE5MamI0WkoxZkhZMnlEUT09" target="_blank"><div class="btn btn-primary"  role="button" >Teilnehmen</div></a></td>
 	</tr>
 </table>
 

@@ -5,7 +5,7 @@
 <script src="https://kit.fontawesome.com/39876f8fd5.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/CSS/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://www.emk-office.ch/resources/theme.css">
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>EMK-Office</title>
 
 <meta name="description" content="Website der EMK Zentralverwaltung" />
@@ -33,7 +33,7 @@
 
 	<div class="row">
 		
-		<div class="col-6">
+		<div class="col-6 col-xs-12">
 			<a href="anleitung.php">
 				<div class="kachel">
 					<h5>2. Software einrichten</h5>
@@ -43,7 +43,7 @@
 			</a>
 		</div>
 	
-		<div class="col-6">
+		<div class="col-6 col-xs-12">
 			<a href="session.php">
 				<div class="kachel">
 					<h5>4. An der Jährlichen Konferenz teilnehmen</h5>
@@ -57,13 +57,13 @@
 	<h4>Programm</h4>
 
 	<div class="row">
-		<div class="col-12">
-		<a href="programm.php" >
+		<div class="col-6 col-xs-12">
+		<a href="programm-sa.php" >
 			<div class="kachel">
 				
-					<p class="T2">Konferenzprogramm Tagung Teil Schweiz</p>
+					<p class="T2">Konferenzprogramm Jährliche Konferenz Samstag, 14.11.20</p>
 					<i class="front-icon far fa-clock"></i><br/>
-					<p>Hier finden Sie das Programm für die Tagung Teil Schweiz</p>
+					<p>Hier finden Sie das Programm für die Jährliche Konferenz</p>
 				
 			</div>	
 		</div>
@@ -76,7 +76,7 @@
 	<p>Hier finden Sie weitere Informationen zur Jährlichen Konferenz.</p> 
 
 	<div class="row">
-		<div class="col-6">
+		<div class="col-6 col-xs-12">
 		<a href="https://nx5186.your-storageshare.de/f/201077" target="_blank">
 			<div class="kachel">
 				
@@ -87,7 +87,7 @@
 			</div>	
 		</div>
 		</a>
-		<div class="col-3">
+		<div class="col-3 col-xs-12">
 			<a href="anmelden.php">
 				<div class="kachel">
 					<h5>1. Anmeldung</h5>
@@ -96,7 +96,7 @@
 				</div>
 			</a>	
 		</div>
-		<div class="col-3">
+		<div class="col-3 col-xs-12">
 			<a href="https://anmeldung.methodisten.ch/registerform.php" target="_blank">
 				<div class="kachel">
 					<h5>Zugang interner Bereich</h5>
