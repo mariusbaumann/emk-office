@@ -26,7 +26,7 @@
 
 <p>Bitte wählen Sie aus auf welcher Art Gerät sie das Programm einrichten möchten:</p>
 
-	<div class="row">
+	<div class="row mb-3">
 
 		<div class="col-6">
 			<a href="anleitung-desktop.php" >
@@ -47,7 +47,7 @@
 			</a>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row mb-3">
 		<div class="col-6">
 			<a href="anleitung-mac.php" >
 				<div class="kachel">

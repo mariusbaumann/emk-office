@@ -18,64 +18,37 @@
 <div class="container">
 	<div class="icon-line"></div>
 
+
 	<a href="#"><div class="icon-logo-container"><img class="icon-logo" src="../2716-991-max.png"></div></a>
 	<a href="fr"><div class="btn btn-primary">Pour le français, cliquez ici</div></a>
 	<a href="support.php"><div class="btn btn-danger float-right"><i class="fas fa-phone"></i> Hilfe-Telefon</div></a>
 	<hr>
-	<h2>Jährliche Konferenz 2020 Startseite</h2>
-	<p>Sowohl die Tagung Teil Schweiz als auch die Jährliche Konferenz werden dieses Jahr grösstenteils online durchgeführt. Diese Seite soll Ihnen helfen, sich auf diese Konferenzen vorzubereiten. Bitte gehen Sie die Einführung durch und lesen Sie die Einzelnen Schritte.</p> 
-	<hr>
-	<h4>Teilnehmen in 4 Schritten</h4>
 
-	<p>Mit den folgenden 4 Schritten werden Sie in den nächsten Wochen in die Online-Teilnahme eingeführt. Sie sollen Ihnen dabei helfen, sich vorzubereiten. Bei Schritt 1 werden sie gebeten, sich anzumelden, bei Schritt 2 wird Ihnen gezeigt, wie Sie ihr Gerät für die Tagungen einrichten. Bei Schritt 3 testen Sie, ob ihre Einrichtung auch funktioniert und  Schritt 4 ist die eigentliche Konferenzteilnahme an den Konferenztagen. Klicken Sie jeweils auf die einzelnen Schritte, um mehr zu erfahren.
-</p> 
-<div class="kacheln">
-		<div class="align">
-			<a href="anmelden.php">
-				<div class="element">
-					<p class="T2">1. Anmeldung</p>
-					<i class="front-icon fas fa-file-signature"></i><br/>
-					<p>Hier melden Sie sich für die Teilnahme an.  <br>&nbsp;</p>
-				</div>
-			</a>
-
-	<div class="row">
-		
-		<div class="col-4">
-			<a href="anleitung.php">
-				<div class="element">
-					<p class="T2">2. Software einrichten</p>
-					<i class="front-icon fas fa-download"></i><br/>
-				<div class="kachel">
-					<h5>2. Software einrichten</h5>
-					<i class="front-icon fas fa-download"></i>
-					<p>Hier wird Ihnen gezeigt, wie Sie das benötigte Programm einrichten.</p>
-				</div>
-			</a>
-		</div>
-
-	<div class="row">
-		
-		<div class="col-6 col-xs-12">
-			<a href="anleitung.php">
-				<div class="kachel">
-					<h5>2. Software einrichten</h5>
-					<i class="front-icon fas fa-download"></i>
-					<p>Hier wird Ihnen gezeigt, wie Sie das benötigte Programm einrichten.</p>
-				</div>
-			</a>
-		</div>
 	
-		<div class="col-6 col-xs-12">
-			<a href="session.php">
-				<div class="kachel">
-					<h5>4. An der Jährlichen Konferenz teilnehmen</h5>
-					<i class="front-icon fas fa-laptop"></i><br/>
-					<p>Hier werden an der Tagung Teil Schweiz sowie an der jährlichen Konferenz an den jeweiligen Konferenztagen die Einstiegslinks zur Teilnahme angezeigt.</p>
-				</div>	
-			</a>
+	<h2>Jährliche Konferenz 2021 Startseite</h2>
+	<p>Hier finden Sie alle Informationen zur Teilnahme an der Jährlichen Konferenz. Die Seite wird laufend aktuallisiert.</p>
+
+	<hr>
+	<h4>Anmeldung für die Teilnahme vor Ort</h4>
+	<p>Wenn Sie vor Ort kommen wollen, müssen Sie sich hier noch einmal für die Teilnahme vor Ort anmelden. Aufgrund der Covid-19 Massnahmen sind 
+	maximal 100 Personen pro Tag erlaubt. Daher können Sie sich nur an 2 von 3 Konferenztagen für die Teilnahme vor Ort anmelden.  </p> 
+
+	<div class="row">
+		<div class="col-12 col-xs-12">
+		<a href="anmeldung-lokal.php" target="_blank">
+			<div class="kachel">
+				
+					<h5>Für die Teilnahme vor Ort anmelden <span class="badge badge-pill badge-danger float-right">Anmeldeschluss: 2. Juni 2021 23:59</span></h5>
+					<i class="front-icon fas fa-file-signature"></i><br/>
+					<p>Hier geht es zum Anmeldeformular.</p>
+					
+					
+				
+			</div>	
 		</div>
+		</a>
 	</div>
+<!--
 	<hr>
 	<h4>Programm</h4>
 
@@ -93,17 +66,17 @@
 		</a>
 	</div>
 
-
+-->
 <hr>
 	<h4>Weitere Informationen</h4>
 	<p>Hier finden Sie weitere Informationen zur Jährlichen Konferenz.</p> 
 
 	<div class="row">
 		<div class="col-6 col-xs-12">
-		<a href="https://nx5186.your-storageshare.de/f/201077" target="_blank">
+		<a href="https://nx5186.your-storageshare.de/f/466921" target="_blank">
 			<div class="kachel">
 				
-					<p class="T2">Dokumente JK 2020</p>
+					<h5>Dokumente JK 2020</h5>
 					<i class="front-icon fas fa-file"></i><br/>
 					<p>Hier finden Sie die wichtisten Dokumennte in der aktuellsten Fassung.</p>
 				
@@ -111,7 +84,7 @@
 		</div>
 		</a>
 		<div class="col-3 col-xs-12">
-			<a href="anmelden.php">
+			<a href="https://zfrmz.com/dMIFmZ03qjHaElNo9x7o">
 				<div class="kachel">
 					<h5>1. Anmeldung</h5>
 					<i class="front-icon fas fa-file-signature"></i>
