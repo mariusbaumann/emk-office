@@ -16,6 +16,10 @@ body {
 	display: inline-block;
 }
 
+.kachel:active {
+	border-color: #aed361;
+}
+
 .kachel:hover {
 	box-shadow: 0px 0px 12px 3px #ccc;
 }
