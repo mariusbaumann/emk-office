@@ -38,7 +38,7 @@
 		<a href="anmeldung-lokal.php" target="_blank">
 			<div class="kachel">
 				
-					<h5>Für die Teilnahme vor Ort anmelden <span class="badge badge-pill badge-danger float-right">Anmeldeschluss: 2. Juni 2021 23:59</span></h5>
+					<h5>Für die Teilnahme vor Ort anmelden <span class="badge badge-pill badge-danger float-right">Anmeldeschluss: 1. Juni 2021 23:59</span></h5>
 					<i class="front-icon fas fa-file-signature"></i><br/>
 					<p>Hier geht es zum Anmeldeformular.</p>
 					
