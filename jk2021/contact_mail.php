@@ -1,43 +1,74 @@
 <?php
-
+$lang = $_POST["lang"];
 $empfaenger  = $_POST["email"]  ; // beachte das Komma
 #$lang  = $_POST["detectedLang"]  ; // beachte das Komma
-$lang = 'de';
+#$lang = 'de';
 // Betreff
 //$betreff = 'EMK-Schweiz: Bestätigung zur Anmeldung';
 
+if ($lang == "fr") {
+    if ($_POST['mi'] == 1) {
+        $mmi = "<p>Mercredi soir </p>";
+    }
+    if ($_POST['do'] == 1) {
+        $mdo = "<p>Jeudi</p>";
+    }
+    if ($_POST['fr'] == 1) {
+        $mfr = "<p>Vendredi</p>";
+    }
+    if ($_POST['sa'] == 1) {
+        $msa = "<p>Samedi</p>";
+    }
 
-if ($_POST['mi'] == 1) {
-    $mmi = "<p>Mittwochabend</p>";
+
+    if ($_POST['dismi'] == 1) {
+        $mdismi = "<p>Mercredi soir</p>";
+    }
+    if ($_POST['disdo'] == 1) {
+        $mdisdo = "<p>Jeudi</p>";
+    }
+    if ($_POST['disfr'] == 1) {
+        $mdisfr = "<p>Vendredi</p>";
+    }
+    if ($_POST['dissa'] == 1) {
+        $mdissa = "<p>Samedi</p>";
+    }
+
 }
-if ($_POST['do'] == 1) {
-    $mdo = "<p>Donnerstag</p>";
-}
-if ($_POST['fr'] == 1) {
-    $mfr = "<p>Feitag</p>";
-}
-if ($_POST['sa'] == 1) {
-    $msa = "<p>Samstag</p>";
-}
+else {
+    if ($_POST['mi'] == 1) {
+        $mmi = "<p>Mittwochabend</p>";
+    }
+    if ($_POST['do'] == 1) {
+        $mdo = "<p>Donnerstag</p>";
+    }
+    if ($_POST['fr'] == 1) {
+        $mfr = "<p>Feitag</p>";
+    }
+    if ($_POST['sa'] == 1) {
+        $msa = "<p>Samstag</p>";
+    }
 
 
-if ($_POST['dismi'] == 1) {
-    $mdismi = "<p>Mittwochabend</p>";
-}
-if ($_POST['disdo'] == 1) {
-    $mdisdo = "<p>Donnerstag</p>";
-}
-if ($_POST['disfr'] == 1) {
-    $mdisfr = "<p>Freitag</p>";
-}
-if ($_POST['dissa'] == 1) {
-    $mdissa = "<p>Samstag</p>";
-}
+    if ($_POST['dismi'] == 1) {
+        $mdismi = "<p>Mittwochabend</p>";
+    }
+    if ($_POST['disdo'] == 1) {
+        $mdisdo = "<p>Donnerstag</p>";
+    }
+    if ($_POST['disfr'] == 1) {
+        $mdisfr = "<p>Freitag</p>";
+    }
+    if ($_POST['dissa'] == 1) {
+        $mdissa = "<p>Samstag</p>";
+    }
 
+}
+    
 
 
 // Nachricht
-if($lang == 'fr' || $lang == 'fr-CH' || $lang == 'fr-FR' ){
+if($lang == 'fr'){
     
     $betreff = 'EEM-Suisse: Confirmation d\'inscription';
     $nachricht = '
@@ -48,11 +79,21 @@ if($lang == 'fr' || $lang == 'fr-CH' || $lang == 'fr-FR' ){
 <body>
     <p>Chère Madame/Monsieur ' . $_POST["nachname"] . '</p>
 
-    <p>Merci de votre intérêt pour l\'événement "Bible, Eglise - Homosexualité".
-    Nous avons reçu votre inscription et nous continuerons à la traiter.</p>
+    <p>Merci de vous inscrire à la conférence annuelle.
+    </p> <p>Les jours auxquels vous pouvez désormais assister de manière dévinitive sur place seront annoncés après la date limite des inscriptions.</p>
+
+    </p> Vous nous avez donné les jours suivants :</p> 
+    '.
+    $mmi . $mdo . $mfr . $msa
     
-    <p><b>Veuillez noter que : 
-    Ce n\'est pas encore la confirmation finale de l\'inscription. Vous le recevrez avec un e-mail séparé (les personnes qui n\'appartiennent pas à l\'EMK, après le 16 octobre).</b></p>
+    .'
+
+    <p>Vous pourriez vous passer des jours suivants :</p>
+
+    '. 
+    $mdismi . $mdisdo . $mdisfr . $mdissa
+    
+    .'
     
     <p>Sincèrement vôtre</p>
     <p>Le comité organisateur</p>
@@ -112,6 +153,11 @@ $header[] = 'From: EMK-Schweiz <noreply@emk-schweiz.ch>';
 if(mail($empfaenger, $betreff, $nachricht, implode("\r\n", $header))) {
 echo "";
 } else {
-echo"E-Mail konnte nicht gesendet werden.";
+    if ($lang == "fr") {
+        echo "L'email n'a pas pu être envoyé." ;
+    }
+    else {
+        echo"E-Mail konnte nicht gesendet werden.";
+    }
 }
 ?>

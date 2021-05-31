@@ -26,11 +26,17 @@
 	<hr>
 
 	
-	<h2>Danke für Ihre Anmeldung</h2>
-	<p>Sie erhalten eine Bestätigung per E-Mail</p>
+	<h2 v-if="genLang == 'de'" >Danke für Ihre Anmeldung</h2>
+	<h2 v-if="genLang == 'fr'" >Merci pour votre inscription</h2>
 
-	<a href="."><div class="btn btn-primary">Zurück zur Startseite</div></a>
-	<a href="anmeldung-lokal.php"><div class="btn btn-primary">Weitere Person anmelden</div></a>
+	<p v-if="genLang == 'de'"> Sie erhalten eine Bestätigung per E-Mail</p>
+	<p v-if="genLang == 'fr'"> Vous recevrez une confirmation par e-mail</p>
+
+	<a v-if="genLang == 'de'" href="."><div class="btn btn-primary">Zurück zur Startseite</div></a>
+	<a v-if="genLang == 'fr'" href="."><div class="btn btn-primary">Retour à la page d'accueil</div></a>
+	
+	<a v-if="genLang == 'de'" href="anmeldung-lokal.php"><div class="btn btn-primary">Weitere Person anmelden</div></a>
+	<a v-if="genLang == 'fr'" href="anmeldung-lokal.php"><div class="btn btn-primary">Enregistrer une autre personne</div></a>
 	<?php
 
 require_once("config.php");
@@ -94,6 +100,34 @@ $sql="INSERT INTO delegierte (del_vorname, del_nachname, del_email, del_func, de
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
 <script >
+var app = new Vue({
+  el: '#app',
+  data: {
+	
+	lang: ''
+	
+  },
+  computed: {
+    
+	genLang: function (data) {
+		if (this.lang == "ch-FR" || this.lang == "fr-FR" || this.lang == "fr" ){
+			return "fr";
+		} else {
+			return "de";
+		}
+		 
+	}
+  },
+  watch: {
+	
+  },
+  methods: {
+	  
+  }
+});
+
+app.lang = navigator.language || navigator.userLanguage; 
+
 
 </script>
 
