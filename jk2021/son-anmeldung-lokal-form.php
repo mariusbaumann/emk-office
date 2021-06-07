@@ -1,6 +1,6 @@
 <form
 	@submit="checkForm"
-  	action="form-save.php"
+  	action="son-form-save.php"
   	method="post"
 	
 	>

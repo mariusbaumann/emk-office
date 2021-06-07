@@ -20,50 +20,94 @@
 
 
 	<a href="#"><div class="icon-logo-container"><img class="icon-logo" src="../2716-991-max.png"></div></a>
+	<p>Legende: <span class="badge" style="background-color: #007bff; color: white ">Pfarrpersonen</span> <span class="badge badge-danger">Laien</span>
 	<hr>
 
+	<div class="row mb-3">
+		<div class="col-3 col-xs-12">
+			<div class="kachel" v-on:click="checkBoxEvMi" v-bind:class="{'kachel-active': checkedMI, 'kachel-disabled': !disabledMI  }">
+				<h5 class="mb-2" v-if="genLang == 'de'" class="form-check-label" for="defaultCheck1">Mittwochabend</h5>
+
+				<h3> {{  countlist.del_mi_PF + countlist.del_mi_LA }}/100 </h3>
+				<p>Plätze gebucht</p>
+				
+				<div class="progress" >
+					<div class="progress-bar bg-primary" :style="{ width: countlist.del_mi_PF + '%' }" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50">{{ countlist.del_mi_PF }}</div>
+					<div class="progress-bar bg-danger" :style="{ width: countlist.del_mi_LA + '%' }"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="50">{{ countlist.del_mi_LA }}</div>
+				</div>
+				<!--<p class="mt-3">davon zur Abwahl vermerkt: </p>
+				<h3>{{ countlist.del_dismi_PF + countlist.del_dismi_LA }}<h3>
+				-->
+			</div>		
+		</div>
+		<div class="col-3 col-xs-12">
+			<div class="kachel" v-on:click="checkBoxEvMi" v-bind:class="{'kachel-active': checkedMI, 'kachel-disabled': !disabledMI  }">
+				<h5 class="mb-2" v-if="genLang == 'de'" class="form-check-label" for="defaultCheck1">Donnerstag</h5>
+
+				<h3 v-if="genLang == 'de'" > {{  countlist.del_do_PF + countlist.del_do_LA }}/100 </h3>
+				<p>Plätze gebucht</p>
+				
+				<div class="progress" class="mb-3">
+					<div class="progress-bar bg-primary" :style="{ width: countlist.del_do_PF + '%' }" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50">{{ countlist.del_do_PF }}</div>
+					<div class="progress-bar bg-danger" :style="{ width: countlist.del_do_LA + '%' }"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="50">{{ countlist.del_do_LA }}</div>
+				</div>
+				<p class="mt-3">davon zur Abwahl vermerkt: </p>
+				<h3>{{ countlist.del_disdo_PF + countlist.del_disdo_LA }}<h3>
+			</div>		
+		</div>
+		<div class="col-3 col-xs-12">
+			<div class="kachel" v-on:click="checkBoxEvMi" v-bind:class="{'kachel-active': checkedMI, 'kachel-disabled': !disabledMI  }">
+				<h5 class="mb-2" v-if="genLang == 'de'" class="form-check-label" for="defaultCheck1">Freitag</h5>
+
+				<h3 v-if="genLang == 'de'" > {{  countlist.del_fr_PF + countlist.del_fr_LA }}/100 </h3>
+				<p>Plätze gebucht</p>
+				
+				<div class="progress" class="mb-3">
+					<div class="progress-bar bg-primary" :style="{ width: countlist.del_fr_PF + '%' }" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50">{{ countlist.del_fr_PF }}</div>
+					<div class="progress-bar bg-danger" :style="{ width: countlist.del_fr_LA + '%' }"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="50">{{ countlist.del_fr_LA }}</div>
+				</div>
+				<p class="mt-3">davon zur Abwahl vermerkt: </p>
+				<h3>{{ countlist.del_disfr_PF + countlist.del_disfr_LA }}<h3>
+			</div>		
+		</div>
+		<div class="col-3 col-xs-12">
+			<div class="kachel" v-on:click="checkBoxEvMi" v-bind:class="{'kachel-active': checkedMI, 'kachel-disabled': !disabledMI  }">
+				<h5 class="mb-2" v-if="genLang == 'de'" class="form-check-label" for="defaultCheck1">Samstag</h5>
+
+				<h3 v-if="genLang == 'de'" > {{  countlist.del_sa_PF + countlist.del_sa_LA }}/100 </h3>
+				<p>Plätze gebucht</p>
+				
+				<div class="progress" class="mb-3">
+					<div class="progress-bar bg-primary" :style="{ width: countlist.del_sa_PF + '%'  }" aria-valuenow="0" aria-valuemin="0" aria-valuemax="50">{{ countlist.del_sa_PF }}</div>
+					<div class="progress-bar bg-danger" :style="{ width: countlist.del_sa_LA + '%' }"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="50">{{ countlist.del_sa_LA }}</div>
+				</div>
+				<p class="mt-3">davon zur Abwahl vermerkt: </p>
+				<h3>{{ countlist.del_dissa_PF + countlist.del_dissa_LA }}<h3>
+			</div>		
+		</div>
+	</div>
+	<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Vorname</th>
+      <th scope="col">Name</th>
+      <th scope="col">E-Mail</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="name in namesList" :key="name.index">
+      <td>{{ name.del_vorname}}</td>
+      <td>{{ name.del_nachname}}</td>
+      <td>{{ name.del_email}}</td>
+    </tr>
+	</tbody>
+	</table>
+</div>
 	
-	<h2 v-if="genLang == 'de'">Anmeldung für die Teilnahme vor Ort</h2>
-	<h2 v-if="genLang == 'fr'">Inscription pour participer en présentiel</h2>
-	<p v-if="genLang == 'de'">Bitte füllen Sie das nachfolgende Formular für jede Person einzeln aus. Namensangaben wie "Peter und Claudia Müller" können wir aus organisatorischen Gründen nich annehmen.</p>
-	<p v-if="genLang == 'fr'">Nous prions chaque personne de remplir le formulaire individuellement. Pour des raisons organisationnelles, les indications de noms comme « Pierre et Claudia Muller » ne pourront pas être enregistrées.</p>
-
-
-	<h4 v-if="genLang == 'de'">Covid-Massnahmen</h4>
-	<h4 v-if="genLang == 'fr'">Mesures liées au COVID-19</h4>
-	<p v-if="genLang == 'de'">Aufgrund der Covid-Massnahmen sind pro Tag nur 100 Personen erlaubt. Sollte an gewissen Tagen das Limit überschritten werden, werden wir Personen bitten auf Zoom zu wechseln.</p> 
-	<p v-if="genLang == 'fr'">En raison des mesures liées au COVID-19, seules 100 personnes pourront assister à la session en présentiel. Si cette limite devait être atteinte durant une ou plusieurs journées, un certain nombre de personnes serait prié de suivre la conférence par ZOOM.</p> 
-
-	<?php 
-	
-	$now = new DateTime('now');
-	$opening = new DateTime('2021-05-31 17:00');
-	#$opening = new DateTime('2021-05-28 12:14');
-	$closing = new DateTime('2021-06-02 23:59');
-	#$closing = new DateTime('2021-05-31 19:00');
-
-
-	#$diffSeconds = $interval['d'] * 24 * 60 * 60 + $interval['h'] * 60 * 60 + $interval['i'] * 60 + $interval['s'];
-
-	if ($now < $opening) {
-		echo '<h4 v-if="genLang == \'de\'">Das Formular wird erst am 31.05.2021 um 17:00 Uhr aufgeschaltet</h4><h4 v-if="genLang == \'fr\'">Le formulaire ne sera pas activé avant le 31.05.2021 à 17h00.</h4>';
-		print("<script>setTimeout(function(){
-			window.location.reload(1);
-		 }, 30000); </script>");
-	} else if ($now > $closing) {
-		echo '<h4 v-if="genLang == \'de\'">Der Anmeldeschluss ist vorüber</h4><h4 v-if="genLang == \'fr\'">La date limite d\'inscription est dépassée</h4>';
-		
-	} else {
-		include('anmeldung-lokal-form.php');
-	}
-
-	
-	
-	?>
 </div>
 
-
-
+	
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 <script >
@@ -102,7 +146,8 @@ var app = new Vue({
 	errVerzichtwahl: "",
 	countlist: {},
     timer: '',
-	lang: ''
+	lang: '',
+	namesList: ''
 	
   },
   computed: {
@@ -120,7 +165,7 @@ var app = new Vue({
   },
   watch: {
 	countlist: function (newVal, oldVal) {
-		console.log(newVal.del_mi);
+		
       if (newVal.del_mi > 99) {
 		  this.disabledMI = false;
 	  } else {
@@ -301,7 +346,7 @@ var app = new Vue({
 				this.errFunktion = "";
 				if (this.checkedMI == true || this.checkedDO == true || this.checkedFR == true || this.checkedSA == true) {
 					this.errTageswahl = "";
-					if (this.disCheckedDO == true || this.disCheckedFR == true || this.disCheckedSA == true || (this.checkedDO == false && this.checkedFR == false && this.checkedSA == false && this.checkedMI == true)) {
+					if (this.disCheckedMI == true || this.disCheckedDO == true || this.disCheckedFR == true || this.disCheckedSA == true) {
 						this.errVerzichtwahl = ""
 						return true; 
 					} else {
@@ -334,17 +379,27 @@ var app = new Vue({
 
 app.lang = navigator.language || navigator.userLanguage; 
 
-$.get("serve-counts.php", function(data, status){
+$.get("serve-counts-stat.php", function(data, status){
     console.log(data);
 	app.countlist = JSON.parse(data);
 });
 
+$.get("serve-counts-stat-names.php", function(data, status){
+    console.log(data);
+	app.namesList = JSON.parse(data);
+});
+
 window.setInterval(function(){
-	$.get("serve-counts.php", function(data, status){
+	$.get("serve-counts-stat.php", function(data, status){
     console.log(data);
 	app.countlist = JSON.parse(data);
   });
-}, 5000);
+
+  $.get("serve-counts-stat-names.php", function(data, status){
+    console.log(data);
+	app.namesList = JSON.parse(data);
+});
+}, 10000);
 
 </script>
 

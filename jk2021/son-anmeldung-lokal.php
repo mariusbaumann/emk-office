@@ -51,10 +51,10 @@
 			window.location.reload(1);
 		 }, 30000); </script>");
 	} else if ($now > $closing) {
-		echo '<h4 v-if="genLang == \'de\'">Der Anmeldeschluss ist vorüber</h4><h4 v-if="genLang == \'fr\'">La date limite d\'inscription est dépassée</h4>';
+		echo "<h4 genLang == 'de'>Der Anmeldeschluss ist vorüber</h4><h4 genLang == 'fr'>La date limite d'inscription est dépassée</h4>";
 		
 	} else {
-		include('anmeldung-lokal-form.php');
+		include('son-anmeldung-lokal-form.php');
 	}
 
 	
