@@ -2,10 +2,18 @@
 
 export const store = {
     state: {
-        emkOfficeData: []
+        emkOfficeData: [
+            
+
+        ]
     },
-    getActiveDay () {
-        return this.state.calendarWeekData.find(day => day.active);
+    getLang () {
+        const langString = navigator.language || navigator.userLanguage;
+        if (langString == "ch-FR" || langString == "fr-FR" || langString == "fr" ){
+            return "fr";
+        } else {
+            return "de";
+        }
     },
     setActiveDay (dayId) {
         this.state.calendarWeekData.map(dayObj => {
