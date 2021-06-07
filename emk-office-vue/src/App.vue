@@ -9,17 +9,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Startseite <span class="sr-only">(current)</span></a>
+          <li class="nav-item" :class="{ active: route === '/'}">
+            <a class="nav-link" href="/">Startseite </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" :class="{ active: route === '/vpn'}">
             <a class="nav-link" href="vpn">VPN</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Downloads">Downloads</a>
+          <li class="nav-item" :class="{ active: route === '/downloads'}">
+            <a class="nav-link" href="downloads">Downloads</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="JK2021">JK 2021</a>
+          <li class="nav-item" :class="{ active: route === '/jk2021'}">
+            <a class="nav-link" href="jk2021">JK 2021</a>
           </li>
         </ul>
       </div>
@@ -43,7 +43,9 @@ export default {
     }
   },
   computed: {
-    
+    route: function() {
+      return this.$route.path;
+    }
 	
   }
   

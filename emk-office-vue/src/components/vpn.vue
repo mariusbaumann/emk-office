@@ -2,9 +2,9 @@
 <div>
    
     <div class="row mb-3">
-        <tile :title="genLang == 'de' ? 'Kassier/innen ' : 'Interner Bereich FR'" :external="false" :icon="'front-icon fas fa-money-bill-wave'" :description="genLang == 'de' ? 'Kassier/Innen von Bezirken klicken bitte hier. ' : 'Interner Bereich FR' " :colWidth="4" :url="'https://cloud.methodisten.ch'" />
-		<tile :title="genLang == 'de' ? 'Mac Benutzer/innen ' : 'Interner Bereich FR'" :external="false" :icon="'front-icon fab fa-apple'" :description="genLang == 'de' ? 'Mac Benutzer/innen klicken bitte hier. ' : 'Interner Bereich FR' " :colWidth="4" :url="'https://cloud.methodisten.ch'" />
-        <tile :title="genLang == 'de' ? 'Mitarbeiter/innen ': 'Microsoft 365 '" :external="false" :icon="'front-icon fas fa-user-friends'" :description="genLang == 'de' ? 'Mitarbeiter/innen der zentralen Dienste klicken bitte hier.': 'FR'" :colWidth="4" :url="'https://portal.office.com'"/>
+        <tile @click.native="kassiere = true, worker = false, macuser = false" :title="genLang == 'de' ? 'Kassier/innen ' : 'Interner Bereich FR'" :external="false" :icon="'front-icon fas fa-money-bill-wave'" :description="genLang == 'de' ? 'Kassier/Innen von Bezirken klicken bitte hier. ' : 'Interner Bereich FR' " :colWidth="4" :active="kassiere" />
+		<tile @click.native="kassiere = false, worker = false, macuser = true" :title="genLang == 'de' ? 'Mac Benutzer/innen ' : 'Interner Bereich FR'" :external="false" :icon="'front-icon fab fa-apple'" :description="genLang == 'de' ? 'Mac Benutzer/innen klicken bitte hier. ' : 'Interner Bereich FR' " :colWidth="4" :active="macuser" />
+        <tile @click.native="kassiere = false, worker = true, macuser = false" :title="genLang == 'de' ? 'Mitarbeiter/innen ': 'Microsoft 365 '" :external="false" :icon="'front-icon fas fa-user-friends'" :description="genLang == 'de' ? 'Mitarbeiter/innen der zentralen Dienste klicken bitte hier.': 'FR'" :colWidth="4" :active="worker" />
     </div>
     
 <hr>
@@ -62,7 +62,103 @@
 <p>Danach können Sie sich Verbinden und das Laufwerk C: Ihres Computers wird nun auf dem Server verbunden. </p>
 </div>
 
+<div v-if="worker">
+<h3>1. Download VPN-Client</h3>
+
+<p>Lade den VPN-Client herunter: <a class="inline-link" href="mitarbeiter__ssl_vpn_client.exe">Mitarbeiter VPN Client</a></p>
+<p>Für Mac lade die VPN-Konfig herunter: <a href="mitarbeiter__ssl_vpn_config.ovpn">Mitarbeiter VPN Konfig</a> </p>
+
+
+<h3>2. Installation VPN-Client</h3>
+
+<p>Wenn der Download abgeschlossen ist, führe die Installationsdatei aus. </p>
+<img>
+<p>Nun errscheint in der Taskleiste ein Ampelsymbol welches auf rot steht. </p>
+<img class="explainimg" src="../assets/vpn/ampel.png">
+<h3>3. Verbinden</h3>
+
+<p>Öffne das Kontext-Menü mit einerm Rechtsklick auf das Aampelsymbol und wähle Verbinden. </p>
+<img  class="explainimg" src="../assets/vpn/verbinden.png">
+<p>Nun erscheint ein Login-Fenster. Gebe die dir zur Verfügung gestellten <b>allgemienen</b> VPN-Angaben ein. Bestätige mit OK. </p>
+<img  class="explainimg" src="../assets/vpn/vpnloginma.png">
+<p>Die Ampel wechselt nach ein paar Sekunen auf Grün.</p>
 </div>
+
+<div v-if="macuser">
+    <h2>1. Installation Tunnelblick</h2>
+
+<p>Laden Sie den VPN-Client herunter:<a class="inline-link" href="Tunnelblick_3.7.7_build_5150.dmg" download> Tunnelblick_3.7.7_build_5150.dmg</a></p>
+<p>Öffnen Sie <b>Tunnelblick_3.7.7_build_5150.dmg</b> mit einem <b>Doppelklick.</b></p>
+<p>Klicken Sie <b>doppelt</b> auf das Tunnel-Symbol.</p>
+<p><img class="explainimg" src="../assets/vpn/tunnelblick-installer.png" /></p>
+<p>Bestätigen sie die Installation mit Ihrem Administrator-Passwort Ihres Macs.</p>
+<p><img class="explainimg" src="../assets/vpn/tunnelblick-adminbestaetigung.png" /></p>
+<p>Nun erschein ein Tunnel-Symbol oben rechts in der Statusleiste (Neben dem W-LAN-Symbol). </p>
+
+<h2>2. Konfiguration Tunnelblick</h2>
+
+<p>Laden Sie die Konfigurations-Datei für Tunnelblick herunter: <a class="inline-link" href="kassiere__ssl_vpn_config.ovpn" download>kassiere__ssl_vpn_config.ovpn</a></p>
+<p>Wechseln sie in den <b>Dowload-Ordner</b> und öffnen sie die Datei  <b>kassiere__ssl_vpn_config.ovpn</b> mit einem <b>Doppelklick</b></p>
+<p>Wählen sie <b>Nur für diesen Benutzer.</b></p>
+<p><img class="explainimg" src="../assets/vpn/tunnelblick-verbindungsinstallation.png" /></p>
+<p>Bestätigen Sie die Installtion der Konfiguration mit ihrem Administrator-Passwort Ihres Macs.</p>
+
+<p>Die nachfolgende Warnmeldung können sie mit OK bestätigen.</p>
+
+<h2>3. Tunnelblick Verbinden</h2>
+
+<p>Klicken Sie in der Statusleiste auf das Tunnel-Symbol und wählen Sie <b>"kassiere__ssl_vpn_config" verbinden</b></p>
+<p><img class="explainimg" src="../assets/vpn/tunnelblick-verbinden.png" /></p>
+<p>Nun erscheint ein Anmeldefenster. Bitte geben sie die ihnen zur verfügung gestellten Informationen ein (Bitte geben Sie <b>nicht</b> ihre persönlichen Daten ein, die benögtigen Sie erst später).</p>
+<p><img class="explainimg" src="../assets/vpn/tunnelblick-anmeldung.png" /></p>
+<p>In der oberen rechten Ecke erscheint nun ein Verbindungsstatusfenster. Sobald dieses eine grüne Schrift zeigt, ist die Verbindung erfolgreich hergestellt.</p>
+
+<h2>4. Installation Microsoft Remote Desktop</h2>
+
+<p><a class="inline-link" href="https://itunes.apple.com/ch/app/microsoft-remote-desktop-10/id1295203466?mt=12" target="_blank" >Klicken Sie auf diesen Link</a> und danach auf <b>Anzeigen in: Mac App Store</b></p>
+<p>Klicken Sie auf <b>LADEN</b></p>
+<p><img class="explainimg" src="../assets/vpn/rdp-laden.png" /></p>
+<p>Sobald der Download beendet wurde, erscheint ein Button <b>ÖFFNEN</b>. Klicken Sie diesen an.</p>
+<p>Nun sehen sie ein leeres Microsoft Remote Desktop Fenster.</p>
+
+<h2>5. Konfiguration Microsoft Remote Desktop</h2>
+
+<p>Laden Sie die Konfigurationsdatei herunter: <a href="DWare_Bezirke_extern_windows.rdp" download>DWare_Bezirke_extern_windows.rdp</a></p>
+<p>Wechseln Sie in den Downloads Ordner.</p>
+<p>Entfernen sie die Endung <b>.txt</b> indem Sie die Datei umbenennen.</p>
+<p><img class="explainimg" src="../assets/vpn/rdp-dateiendung.png" /></p>
+<p>Sie werden nun gefragt ob Sie wirklich die Dateiendung ändern wollen. Bestätigen sie mit <b>.rdp verwenden</b></p>
+<p>Öffnen sie die .rdp Datei nun mit einem Doppelklick. Es erscheint ein Fenster von Microsoft Remote Desktop.</p>
+<p>Bestätigen sie mit <b>Continue</b></p>
+<p><img class="explainimg" src="../assets/vpn/rdp-anmeldebestaetigung.png" /></p>
+<p>Nun erscheint ein Anmeldefenster. Bitte geben sie hier ihre <b>persönlichen</b> Anmeldedaten ein. </p>
+<p><b>HINWEIS:</b> Bitte löschen sie die Angabe EMKDOM\ nicht, geben sie stattdessen ihren Benuzernamen nach EMKDOM\ ein.</p>
+<p><img class="explainimg" src="../assets/vpn/rdp-anmeldung.png" /></p>
+<p>Bestätigen Sie mit <b>Done</b></p>
+<p>Bestätigen Sie mit <b>Continue</b></p>
+<p><img class="explainimg" src="../assets/vpn/rdp-anmeldebestaetigung.png" /></p>
+<p>Nun sind Sie wie gewohnt auf dem Server. </p>
+
+<h2>6. Hinzufügen lokaler Laufwerke</h2>
+<p>Öffnen Sie <b>Microsoft Remote Desktop.</b></p>
+<p>Klicken Sie im Menu am oberen Bildschirmrand auf <b>Connections</b> und anschliessend auf <b>import Desktops...</b></p>
+<p><img class="explainimg" src="../assets/vpn/RDP-ImportDesktops.png" /></p>
+<p>Wählen Sie die zu bearbeitende Remote-Desktop-Verbindung aus.</p>
+<p><img class="explainimg" src="../assets/vpn/RDP-ChooseFile2.png" /></p>
+<p>Nun erscheint diese Verbindung im Microsoft Remote Desktop Fenster. Klicken sie auf den Bleistift um die Verbindung zu editieren.</p>
+<p><img class="explainimg" src="../assets/vpn/RDP-Connections.png" /></p>
+<p>Wechseln Sie auf <b>Local Resources.</b></p>
+<p><img class="explainimg" src="../assets/vpn/RDP-EditResources.png" /></p>
+<p>Klicken Sie auf das + Symbol um eine Lokale Resource hinzuzufügen.</p>
+<p>Wählen Sie den Order auf ihrem Mac, den sie auch auf dem Server verbunden haben möchten.</p>
+<p>Stellen Sie sicher, dass unter <b>User Account, Ask me every time</b> ausgewählt ist </p>
+<p>Bestätigen Sie mit <b>Save</b></p>
+<p>Wenn Sie nun die Verbindung mit einem Doppelklick starten, wird der lokale Ordner ihres Macs auf dem Server als Netzlaufwerk angezeigt.</p>
+<p><b>HINWEIS:</b>Stellen Sie sicher, dass in jedem Fall beim Login <b>EMKDOM\</b> vor ihrem Benutzernamen steht (Das \ ist ein Backslash, auf dem Mac mit der Tastenkombination alt + shift + 7 hinzuzufügen).</p>
+
+</div>
+</div>
+
 
 
 </template>

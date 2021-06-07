@@ -1,9 +1,9 @@
 <template>
         <div :class="'col-' + colWidth">
 			<a :href="url" :target="conTarget">
-				<div class="kachel">
+				<div class="kachel" :class="{ 'green-border' : active }">
 					<h5>{{ title }}<i v-if="external" class="fas fa-external-link-alt float-right"></i><span v-if="warningBadge" class="badge badge-warning float-right mr-2">{{ warningBadge }}</span><span v-if="dangerBadge" class="badge badge-danger float-right mr-2">{{ dangerBadge }}</span> </h5>
-					<i :class="icon"></i><br/>
+					<div class="mt-3"><i :class="icon"></i><span class="big ml-3" v-if="bigmessage">{{ bigmessage }}</span><br/></div>
 					<p>{{ description }}</p>
 				</div>
 			</a>
@@ -15,7 +15,7 @@ import {store} from "../store.js";
 
 export default {
     name: "tile",
-    props: ['title', 'external', 'icon', 'description', 'colWidth', 'url', 'blank', 'warningBadge', 'dangerBadge'], 
+    props: ['title', 'external', 'icon', 'description', 'colWidth', 'url', 'blank', 'warningBadge', 'dangerBadge', 'active', 'bigmessage'], 
     data() {
         return {
             state: store.state,
@@ -35,5 +35,13 @@ export default {
 </script>
 
 <style  scoped>
+
+.green-border {
+    border-color: #aed361;
+}
+
+.big {
+    font-size: 50px;
+}
 
 </style>
