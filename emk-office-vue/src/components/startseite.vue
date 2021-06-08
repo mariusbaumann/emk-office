@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="row mb-3">	
-		<tile :title="genLang == 'de' ? 'Jährliche Konferenz 2021 Startseite ' : 'Interner Bereich FR'" :external="false" :icon="'front-icon far fa-calendar-alt'" :description="genLang == 'de' ? 'Zur Startseite Tagung Teil Schweiz' : 'Interner Bereich FR'" :colWidth="12" :url="'/jk2021'" :blank="false"/>
+		<tile :title="genLang == 'de' ? 'Jährliche Konferenz 2021 Startseite ' : 'Interner Bereich FR'" :external="false" :icon="'front-icon fas fa-users'" :description="genLang == 'de' ? 'Zur Startseite Tagung Teil Schweiz' : 'Interner Bereich FR'" :colWidth="12" :url="'/jk2021'" :blank="false"/>
     </div>
     <div class="row mb-3">	
 		<tile :title="genLang == 'de' ? 'Interner Bereich ' : 'Interner Bereich FR'" :external="true" :icon="'front-icon fas fa-cloud'" :description="genLang == 'de' ? 'zum teilen von Inhalten mit Laien und Bezriken. ' : 'Interner Bereich FR' " :colWidth="6" :url="'https://cloud.methodisten.ch'" />
