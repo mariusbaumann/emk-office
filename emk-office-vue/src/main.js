@@ -5,6 +5,8 @@ import { store } from './store.js'
 
 Vue.config.productionTip = false
 
+Vue.component('runningTile', require('./components/runningTile.vue'));
+
 new Vue({
   store,
   router,

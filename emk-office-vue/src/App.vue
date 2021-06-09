@@ -2,7 +2,7 @@
   <div class="container">
     <div class="icon-line"></div>
       <a href="#"><div class="icon-logo-container"></div></a>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <nav v-if="!noMenu" class="navbar navbar-expand-lg navbar-light bg-light mb-3">
       <a class="navbar-brand" href="#"><img class="icon-logo" src="./assets/2716-991-max.png"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import { store } from './store';
 
 
 
@@ -40,11 +41,15 @@ export default {
   data: function () {
     return { 
     lang: navigator.language || navigator.userLanguage,
+    getNoMenu: store.getNoMenu(),
     }
   },
   computed: {
     route: function() {
       return this.$route.path;
+    },
+    noMenu: function() {
+      return this.getNoMenu.includes(this.route);
     }
 	
   }

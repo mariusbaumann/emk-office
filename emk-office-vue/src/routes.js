@@ -13,6 +13,8 @@ import jkStartseite from './components/jkStartseite.vue'
 import jkAnmeldung from './components/jkAnmeldung.vue'
 import jkAnleitung from './components/jkAnleitung.vue'
 import jkProgramm from './components/jkProgramm.vue'
+import jkAnleitungWahl from './components/jkAnleitungWahl.vue'
+
 
 const urlprefix = ''
 
@@ -45,6 +47,10 @@ const routes = [
             {
                 path: 'anleitung',
                 component: jkAnleitung,
+            },
+            {
+                path: 'anleitungWahl',
+                component: jkAnleitungWahl,
             },
             {
                 path: 'programm',
