@@ -30,9 +30,12 @@
                                 </div>
                             </div>
                             <hr v-if="item.subitems.length">
-                            <div class="row">
-                            <runningTile2 :colWidth="12" :data="item.subitems" :child="true"/>
+                            <div v-if="(colWidth == '3' && !item.subitems2) || (colWidth != '3' || !item.subitems2)" class="row">
+                            <runningTile2 :colWidth="item.subitems2 ? 6 : 12" :data="item.subitems" :child="true"/>
+                            <runningTile2 v-if="item.subitems2" :colWidth="6" :data="item.subitems2" :child="true"/>
+                            
                             </div>
+                            <div v-else-if="item.subitems.length">Mehr in Detailansicht</div>
                         </div>
                     </div>
                 </div>
@@ -90,6 +93,10 @@ export default {
 
 .big {
     font-size: 50px;
+}
+
+h5 {
+  overflow-wrap: break-word;
 }
 
 </style>

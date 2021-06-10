@@ -1,8 +1,8 @@
 <template>
 <div>
   <div v-if="true" class="row mb-3">	
-		<tile :title="genLang == 'de' ? 'An Zoomsitzung Teilnehmen ' : 'Documents JK 2021'" :external="true" :icon="'front-icon fas fa-desktop'" :description="genLang == 'de' ? 'Klicken Sie hier, öffnet sich die aktuelle Zoomsitzung' : 'Vous trouverez ici les documents les plus importants dans leur dernière version.'" :colWidth="4" :url="'/jk2021/anleitung'" />
-    <tile :title="genLang == 'de' ? 'Wahl/Abstimmungstool  ' : 'Accès à le domain interne'" :external="true" :icon="'front-icon fas fa-list-alt'" :description="genLang == 'de' ? 'Klicken Sie hier um an Abstimmungen und Wahlen teil zu nehmen. ' : 'Demander l\'accès à des documents'" :colWidth="4" :url="'/jk2021/programm'" />
+		<tile :title="genLang == 'de' ? 'An Zoomsitzung Teilnehmen ' : 'Documents JK 2021'" :external="true" :icon="'front-icon fas fa-desktop'" :description="genLang == 'de' ? 'Klicken Sie hier, öffnet sich die aktuelle Zoomsitzung' : 'Vous trouverez ici les documents les plus importants dans leur dernière version.'" :colWidth="4" :url="''" :disabled="true" />
+    <tile :title="genLang == 'de' ? 'Wahl/Abstimmungstool  ' : 'Accès à le domain interne'" :external="true" :icon="'front-icon fas fa-list-alt'" :description="genLang == 'de' ? 'Klicken Sie hier um an Abstimmungen und Wahlen teil zu nehmen. ' : 'Demander l\'accès à des documents'" :colWidth="4" :url="''" :disabled="true" />
     <tile :title="genLang == 'de' ? 'Youtube-Stream öffnen ' : 'Accès à le domain interne'" :external="true" :icon="'front-icon fab fa-youtube'" :description="genLang == 'de' ? 'Verfolgen Sie die Jährliche Konferenz im öffentlichen Youtube-Live-Stream ' : 'Demander l\'accès à des documents'" :colWidth="4" :url="'https://www.youtube.com/channel/UC7vNsDKuvh5zwKkQ2WRxolg'" />
   </div>
   <hr>

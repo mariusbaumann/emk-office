@@ -11,15 +11,15 @@
   
   <!--<h4>Hier sehen Sie das Programm sobald dieses final ausgearbeitet ist.</h4>-->
 <div class="row">
-<runningTile v-if="doo == true || (doo == false && fr == false && sa == false && so == false)" :title="genLang == 'de' ? 'Donnerstag ' : 'Interner Bereich FR'" :colWidth="doo == true ? '12' : '3'" :data="dataDo" />
-<runningTile v-if="fr == true || (doo == false && fr == false && sa == false && so == false)" :title="genLang == 'de' ? 'Donnerstag ' : 'Interner Bereich FR'" :colWidth="fr == true ? '12' : '3'" :data="dataFr" />
-<runningTile v-if="sa == true || (doo == false && fr == false && sa == false && so == false)" :title="genLang == 'de' ? 'Donnerstag ' : 'Interner Bereich FR'" :colWidth="sa == true ? '12' : '3'" :data="dataSa" />
-<runningTile v-if="so == true || (doo == false && fr == false && sa == false && so == false)" :title="genLang == 'de' ? 'Donnerstag ' : 'Interner Bereich FR'" :colWidth="so == true ? '12' : '3'" :data="dataSo" />
+<runningTile v-if="doo == true || (doo == false && fr == false && sa == false && so == false)" :title="genLang == 'de' ? 'Donnerstag ' : 'Interner Bereich FR'" :colWidth="doo == true ? '12' : '3'" :data="state.jkProgrammDo" />
+<runningTile v-if="fr == true || (doo == false && fr == false && sa == false && so == false)" :title="genLang == 'de' ? 'Donnerstag ' : 'Interner Bereich FR'" :colWidth="fr == true ? '12' : '3'" :data="state.jkProgrammFr" />
+<runningTile v-if="sa == true || (doo == false && fr == false && sa == false && so == false)" :title="genLang == 'de' ? 'Donnerstag ' : 'Interner Bereich FR'" :colWidth="sa == true ? '12' : '3'" :data="state.jkProgrammSa" />
+<runningTile v-if="so == true || (doo == false && fr == false && sa == false && so == false)" :title="genLang == 'de' ? 'Donnerstag ' : 'Interner Bereich FR'" :colWidth="so == true ? '12' : '3'" :data="state.jkProgrammSo" />
 
 </div>
-  <div v-if="desktop">
+ 
 
-  </div>
+
 
 </div>
 </template>
@@ -28,12 +28,14 @@
 import {store} from "../store.js"
 import tile from "./tile.vue"
 import runningTile from "./runningTile.vue"
+import axios from "axios"
 
 export default {
     components: {
         tile,
         runningTile,
     },
+    
     name: "jkAnleitung",
     data() {
         return {
@@ -44,17 +46,31 @@ export default {
             fr: false,
             sa: false,
             so: false,
-            dataDo: store.state.jkProgrammDo,
-            dataFr: store.state.jkProgrammFr,
-            dataSa: store.state.jkProgrammSa,
-            dataSo: store.state.jkProgrammSo,
+            publicPath: process.env.BASE_URL,
+            // dataDo: this.state.jkProgrammDo,
+            // dataFr: this.state.jkProgrammFr,
+            // dataSa: this.state.jkProgrammSa,
+            // dataSo: this.state.jkProgrammSo,
         }
     },
     computed: {
         route: function() {
       return this.$route.path;
-    }
+      }
     },
+    methods: {
+      getNotifications: function() {
+        axios
+          .get('/programm.json')
+          .then(response => (this.state = response.data));
+      }
+    },
+    mounted: function () {
+      this.getNotifications();
+  window.setInterval(() => {
+    this.getNotifications()
+  }, 30000)
+}
 }
 </script>
 
