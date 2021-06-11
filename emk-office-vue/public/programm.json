@@ -4,12 +4,12 @@
         {
             "timeStart": "08:00",
             "timeEnd": "09:00",
-            "delay": "+5 min",
+            "delay": "",
             "title": "Einloggen im Zoom",
             "titleFR": "Dejeuner à midi",
             "description": "Durch klick auf den Knopf im Zoom einloggen",
             "descriptionFR": "bon apetit",
-            "now": true,
+            "now": false,
             "break": false,
             "electionpoly": false, 
             "zoomelection": false,
@@ -594,7 +594,7 @@
             "now": false,
             "break": false,
             "electionpoly": false, 
-            "zoomelection": false,
+            "zoomelection": true,
             "groupwork": false,
             "results": [
 
@@ -769,7 +769,7 @@
     ],
         "jkProgrammFr": [
             {
-                "timeStart": "08:01",
+                "timeStart": "08:00",
                 "timeEnd": "10:30",
                 "delay": "",
                 "title": "Einloggen im Zoom",
@@ -1146,7 +1146,7 @@
                 "timeStart": "14:50",
                 "timeEnd": "10:30",
                 "delay": "",
-                "title": "Situng Teil 4",
+                "title": "Sitzung Teil 4",
                 "titleFR": "",
                 "description": "",
                 "descriptionFR": "",
